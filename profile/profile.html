@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="../store.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="../index.html">Meshop.</a>
+      </div>
+    </nav>
+
+    <div class="main name">
+      <h3>My Profile</h3>
+      <div class="main_items"><input type="text" placeholder="First Name" id="fname"></div>
+      <div class="main_items"><input type="text" placeholder="Last Name" id="lname"></div>
+      <div class="main_items message" id="msgBox"></div>
+      <div class="main_items"><button type="button" onclick="saveInfo()">Save info</button></div>
+    </div>
+
+    <div class="main password">
+      <h3>Edit Password</h3>
+      <div class="main_items"><input type="text" placeholder="Old password" id="fname"></div>
+      <div class="main_items"><input type="text" placeholder="New password" id="lname"></div>
+      <div class="main_items"><input type="text" placeholder="Confirm new password" id="lname"></div>
+      <div class="main_items message" id="msgBox"></div>
+      <div class="main_items"><button type="button" onclick="updatePassword()">Edit Password</button></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
