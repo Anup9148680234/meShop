@@ -1,4 +1,12 @@
 // Write your script here
+let pre = JSON.parse(localStorage.getItem("user"));
+
+if(!pre.signedup){
+    window.location = "../signup/index.html";
+}
+else if(!pre.loggedin){
+    window.location = "../login/index.html";
+}
 
 function saveInfo(){
     let user = JSON.parse(localStorage.getItem("user"));
