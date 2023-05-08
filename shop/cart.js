@@ -1,7 +1,5 @@
-let arr =[];
-
-function addToCart(x){
-    let y = x.parentNode;
-    y.setAttribute("class","item inCart");
-    
-}
+fetch("shop.html")
+.then((response)=>response.text())
+.then(html =>{
+    console.log(html);
+})

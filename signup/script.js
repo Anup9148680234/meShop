@@ -1,3 +1,11 @@
+let pre = JSON.parse(localStorage.getItem("user"));
+
+if(pre.signedup){
+    window.location = "../profile/profile.html";
+}
+
+
+
 let msgBox = document.querySelector('#msgBox');
 
 function signUp(){
@@ -37,6 +45,7 @@ function signUp(){
             "email":email,
             "password":pass1,
             "signedup":true,
+            "loggedin":false,
         }
 
         localStorage.setItem("user",JSON.stringify(user));
