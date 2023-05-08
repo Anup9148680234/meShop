@@ -77,7 +77,7 @@ fetch("https://fakestoreapi.com/products")
           </div>
           <div class="row ratings">Rating: ${element.rating.rate} <img src="star.png"></div>
         </div>
-        <button id="addBtn">Add to Cart</button>
+        <button id="addBtn${element.id}" onclick="addToCart(addBtn${element.id})">Add to Cart</button>
         `
         mc.appendChild(item);
         
@@ -103,7 +103,7 @@ fetch("https://fakestoreapi.com/products")
         </div>
         <div class="row ratings">Rating: ${element.rating.rate} <img class="staricon" src="star.png"></div>
       </div>
-      <button id="addBtn">Add to Cart</button>
+      <button id="addBtn${element.id}" onclick="addToCart()">Add to Cart</button>
       `
       wc.appendChild(item);
     }
@@ -128,7 +128,7 @@ fetch("https://fakestoreapi.com/products")
           </div>
           <div class="row ratings">Rating:  ${element.rating.rate} <img class="staricon" src="star.png"></div>
         </div>
-        <button id="addBtn">Add to Cart</button>
+        <button id="addBtn${element.id}" onclick="addToCart()">Add to Cart</button>
         `
         jw.appendChild(item);
     }
@@ -153,7 +153,7 @@ fetch("https://fakestoreapi.com/products")
           </div>
           <div class="row ratings">Rating: ${element.rating.rate} <img src="star.png"></div>
         </div>
-        <button id="addBtn">Add to Cart</button>
+        <button id="addBtn${element.id}" onclick="addToCart()">Add to Cart</button>
         `
         ec.appendChild(item);
     }
